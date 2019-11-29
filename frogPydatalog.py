@@ -11,5 +11,6 @@ canary(X) <= chirps(X) & sings(X)
 green(X) <= frog(X)
 yellow(X) <= canary(X)
 
-#print(pyDatalog.ask('frog("fritz")'))
-print(frog("xyz"))
+query = 'frog(X)'
+print(pyDatalog.ask(query))
+#print(frog("fritz"))
